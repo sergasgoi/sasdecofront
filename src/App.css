@@ -1,0 +1,119 @@
+.App {
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgb(235, 76, 171), rgb(227, 77, 171), rgb(218, 78, 170), rgb(210, 80, 170), rgb(202, 81, 170), rgb(193, 82, 170), rgb(185, 83, 169), rgb(176, 84, 169), rgb(168, 85, 169), rgb(160, 87, 169), rgb(151, 88, 168), rgb(143, 89, 168));
+  
+}
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
+
+.tit{
+    margin-top: 35px;
+    margin-left: 10px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+
+footer {
+  padding-top:5px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+}
+
+
+/* ////////////////////////////// barra de navegacion*/
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.nav {
+  position: relative;
+  width: 50%;
+  min-width: 300px;
+  height: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fffa;
+  border-left: 10px solid #fffa;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30%;
+  height: 49px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fffa;
+  border-right: 10px solid #fffa;
+  transition: 0.3s linear all;
+  color: #faa;
+}
+
+.slider-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+
+}
+
+
+.slider-menu>li {
+  display: inline-flex;
+  padding: 14px;
+  margin-left: 2px;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s linear all;
+  user-select: none;
+}
+
+.slider-menu>li:hover {
+  color: #faa;
+  box-shadow: 0 50px 5px rgba(0, 0, 0, 0.15) inset;
+}
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 820px) {
+
+ a{
+  font-size: 11px;
+ }
+
+ .App{
+  padding-left: 7px;
+  padding-right: 7px;
+ }
+}
